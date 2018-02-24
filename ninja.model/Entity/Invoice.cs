@@ -55,7 +55,7 @@ namespace ninja.model.Entity {
             double sum = 0;
 
             foreach(InvoiceDetail item in this.Detail)
-                sum += item.TotalPriceWithTaxes;
+                sum += item.TotalPriceWithTaxes; // TotalPriceWithTaxes Fixed
 
             return sum;
 

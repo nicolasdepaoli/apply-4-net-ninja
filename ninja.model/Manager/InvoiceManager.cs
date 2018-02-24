@@ -56,11 +56,8 @@ namespace ninja.model.Manager {
               por los recibidos por parámetro
              */
 
-            #region Escribir el código dentro de este bloque
-
-            throw new NotImplementedException();
-
-            #endregion Escribir el código dentro de este bloque
+            this._mock.DeleteDetail(id);
+            this._mock.AddDetail(id, detail);
 
         }
 

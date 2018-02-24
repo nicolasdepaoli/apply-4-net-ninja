@@ -92,12 +92,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ninja.model\ninja.model.csproj">
-      <Project>{d0399eac-b340-40e7-a13c-e5d9d0b05a18}</Project>
-      <Name>ninja.model</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ninja\ninja.web.csproj">
-      <Project>{1981E7C9-6FAE-49E4-9BB9-FBCD1279361B}</Project>
+      <Project>{1981e7c9-6fae-49e4-9bb9-fbcd1279361b}</Project>
       <Name>ninja.web</Name>
     </ProjectReference>
   </ItemGroup>

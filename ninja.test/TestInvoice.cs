@@ -71,11 +71,13 @@ namespace ninja.test {
               3- La prueba tiene que mostrarse que se ejecuto correctamente
             */
 
-            #region Escribir el código dentro de este bloque
 
-            throw new NotImplementedException();
+            long id = 4;
+            InvoiceManager manager = new InvoiceManager();
 
-            #endregion Escribir el código dentro de este bloque
+            manager.Delete(id);
+
+            Assert.IsTrue(manager.Exists(id));
 
         }
 
@@ -102,7 +104,7 @@ namespace ninja.test {
                 UnitPrice = 87
             });
 
-            manager.UpdateDetail(id, detail);
+            manager.UpdateDetail(id, detail); // UpdateDetail method fixed
             Invoice result = manager.GetById(id);
 
             Assert.AreEqual(2, result.GetDetail().Count());
